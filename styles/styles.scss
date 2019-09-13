@@ -28,15 +28,10 @@ nav{
         }
     }
     .nav-links{
-        transition: opacity 1s;
         display: flex;
         justify-content: space-evenly;
         width: 35%;
         margin: 20px;
-        .nav-item{
-            transition: opacity 1s;
-            transition-delay: 2s;
-        }
         a{
             color: #c4c4c4;
             text-decoration: none;
@@ -130,6 +125,9 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
+#burger{
+        display: block;
+    }
 nav{
     display: flex;
     flex-direction: column;
@@ -139,9 +137,6 @@ nav{
         flex-direction: column;
         justify-content: space-around;
         .nav-item{
-            transition: opacity 1s;
-            transition-delay: 2s;
-            opacity: 0;
             border-top: 0.5px solid #c4c4c4;
             margin: 10px;
             display: flex;

@@ -36,8 +36,6 @@ nav .nav-logo .logo {
 }
 
 nav .nav-links {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,13 +44,6 @@ nav .nav-links {
           justify-content: space-evenly;
   width: 35%;
   margin: 20px;
-}
-
-nav .nav-links .nav-item {
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
 }
 
 nav .nav-links a {
@@ -74,6 +65,10 @@ nav .nav-icon {
 nav .nav-item:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+#burger {
+  display: none;
 }
 
 .hero-container {
@@ -170,6 +165,9 @@ nav .nav-item:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  #burger {
+    display: block;
+  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -190,11 +188,6 @@ nav .nav-item:hover {
         justify-content: space-around;
   }
   nav .nav-links .nav-item {
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-    -webkit-transition-delay: 2s;
-            transition-delay: 2s;
-    opacity: 0;
     border-top: 0.5px solid #c4c4c4;
     margin: 10px;
     display: -webkit-box;
