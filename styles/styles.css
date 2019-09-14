@@ -10,7 +10,7 @@ nav {
   -webkit-transition: height 1s;
   transition: height 1s;
   width: 80vw;
-  height: 12vh;
+  height: 10vh;
   margin: auto;
   background-color: #111111;
   display: -webkit-box;
@@ -39,10 +39,9 @@ nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 35%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
   margin: 20px;
 }
 
@@ -75,6 +74,7 @@ nav .nav-item:hover {
   width: 80vw;
   height: 75vh;
   margin: auto;
+  border-radius: 5px;
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +109,7 @@ nav .nav-item:hover {
 }
 
 .hero-container .hero-info {
-  width: 25%;
+  width: 40%;
   margin: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -134,6 +134,11 @@ nav .nav-item:hover {
 
 .hero-container .tech-icons-container {
   width: 80%;
+}
+
+.hero-container .tech-icons-container h4 {
+  color: #444444;
+  font-weight: bolder;
 }
 
 .hero-container .tech-icons-container .tech-icons {
@@ -164,7 +169,27 @@ nav .nav-item:hover {
   border: 0.5px solid #000000;
 }
 
-@media only screen and (max-width: 600px) {
+.hero-container .tech-icons-container .skill {
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-family: Ubuntu Mono;
+}
+
+@media only screen and (max-width: 700px) {
   #burger {
     display: block;
   }
@@ -179,6 +204,7 @@ nav .nav-item:hover {
   }
   nav .nav-links {
     width: 100%;
+    font-size: 20px;
     display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -214,8 +240,8 @@ nav .nav-item:hover {
     width: 60px !important;
     height: 60px !important;
   }
-  .hero-container {
-    margin-top: 100px;
+  .hero-container .hero-info {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

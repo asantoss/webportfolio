@@ -10,7 +10,7 @@ body{
 nav{
     transition: height 1s;
     width: 80vw;
-    height: 12vh;
+    height: 10vh;
     margin: auto;
     background-color: #111111;
     display: flex;
@@ -29,8 +29,8 @@ nav{
     }
     .nav-links{
         display: flex;
-        justify-content: space-evenly;
-        width: 35%;
+        justify-content: space-around;
+        width: 50%;
         margin: 20px;
         a{
             color: #c4c4c4;
@@ -61,6 +61,7 @@ nav{
     width: 80vw;
     height: 75vh;
     margin: auto;
+    border-radius: 5px;
     margin-top: 20px;
     display: flex;
     text-align: center;
@@ -80,7 +81,7 @@ nav{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .hero-info{
-        width: 25%;
+        width: 40%;
         margin: auto;
         align-self: center;
     }
@@ -100,6 +101,10 @@ nav{
     }
     .tech-icons-container{
         width: 80%;
+        h4{
+            color: #444444;
+            font-weight: bolder;
+        }
         .tech-icons{
             display: flex;
             margin-top: 20px;
@@ -121,10 +126,20 @@ nav{
             margin-top: 50px;;
             border: 0.5px solid #000000;
         }
+        .skill{
+            color: #444444;
+            display: flex;
+            height: 5vh;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-family: Ubuntu Mono;
+        }
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 #burger{
         display: block;
     }
@@ -133,6 +148,7 @@ nav{
     flex-direction: column;
     .nav-links{
         width: 100%;
+        font-size: 20px;
         display: none;
         flex-direction: column;
         justify-content: space-around;
@@ -156,7 +172,10 @@ nav{
     }
 }
 .hero-container{
-    margin-top: 100px;
+    .hero-info{
+        width: 70%;
+    }
+
 }
 
 }

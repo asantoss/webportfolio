@@ -19,19 +19,21 @@ HTML, CSS, Javascript, React, Redux, NodeJS, PostgreSQL, Python, GraphQL
 
 + Entertain me is an application that caters to open minded individuals who just want to find a new corner on the internet to hangout and find new content. Users are fed content from a set of APIs.
 + I was a member of a four person team. My job included handling the AJAX requests to the apis and the methods to save user data to Firebase Cloud Store. 
-<p align="center">
+<center>
  
 [GitHub](https://github.com/asantoss/entertainMe) | [Live Site](https://bit.ly/2lFZRGx)
- </p>
+
+ </center>
 
 **Gift To You**
 
 + The goal of gift to you is to provide users gift suggestions after they answer a few questions about their loved one.
 + This was a four member group project, I was in charge of styling the main components that are shared through out the site & handling database queries & mutations by setting up our GraphQL api.
-<p align="center">
+<center>
  
 [GitHub](https://github.com/castillojuan1000/FullStackProject) | [Live Site](https://gifttoyou.ga)
- </p>
+
+ </center>
 
 ### <center>Prior Experience </center>
 
