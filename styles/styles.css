@@ -189,6 +189,74 @@ nav .nav-item:hover {
   font-family: Ubuntu Mono;
 }
 
+.project-container {
+  font-family: 'Ubuntu Mono';
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-container .project-card {
+  border: 2px solid #333333;
+  border-radius: 3px;
+  margin: 20px;
+  display: flex column;
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-container .project-card p {
+  font-weight: 100;
+}
+
+.project-container .project-card img {
+  border-radius: 3px;
+  border: 1px solid #333333;
+}
+
+.project-container .project-card .project-links {
+  padding: 10px;
+}
+
+.project-container .project-card .project-links a {
+  background-color: #444444;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.project-container .project-card .project-links a:hover {
+  background-color: transparent;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.about-container .about-description {
+  width: 50%;
+}
+
 @media only screen and (max-width: 700px) {
   #burger {
     display: block;

@@ -1,181 +1,226 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap');
 
-
-body{
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #c4c4c4;
+body {
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #c4c4c4;
 }
 
-nav{
-    transition: height 1s;
-    width: 80vw;
-    height: 10vh;
-    margin: auto;
-    background-color: #111111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    .nav-logo{
-        .logo{
-            background-color: #c4c4c4;
-            border-radius: 50%;
-            width: 105px;
-            height: 103px;
-            margin: 10px;
-        }
-    }
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-        margin: 20px;
-        a{
-            color: #c4c4c4;
-            text-decoration: none;
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
-            font-family: 'Ubuntu Mono', monospace;
-            font-weight: 200;
-        }
-    }
-    .nav-icon{
-        text-align: center;
-        font-family: FontAwesome;
-        color: #c4c4c4;
-    }
-    .nav-item:hover{
-        cursor: pointer;
-        opacity: 0.5;
-    }
-
+nav {
+	transition: height 1s;
+	width: 80vw;
+	height: 10vh;
+	margin: auto;
+	background-color: #111111;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 5px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	.nav-logo {
+		.logo {
+			background-color: #c4c4c4;
+			border-radius: 50%;
+			width: 105px;
+			height: 103px;
+			margin: 10px;
+		}
+	}
+	.nav-links {
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		margin: 20px;
+		a {
+			color: #c4c4c4;
+			text-decoration: none;
+			font-size: 24px;
+			line-height: 28px;
+			text-align: center;
+			font-family: 'Ubuntu Mono', monospace;
+			font-weight: 200;
+		}
+	}
+	.nav-icon {
+		text-align: center;
+		font-family: FontAwesome;
+		color: #c4c4c4;
+	}
+	.nav-item:hover {
+		cursor: pointer;
+		opacity: 0.5;
+	}
 }
-#burger{
-    display: none;
+#burger {
+	display: none;
 }
 
-.hero-container{
-    width: 80vw;
-    height: 75vh;
-    margin: auto;
-    border-radius: 5px;
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    color: #c4c4c4;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    .hero-img{
-        margin: auto;
-        display: flex;
-        width: 95%;
-        height: 95%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url('./assets/herobg.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .hero-info{
-        width: 40%;
-        margin: auto;
-        align-self: center;
-    }
-    .hero-name{
-        font-size: 25px;
-        font-family: Ubuntu Mono;
-        font-weight: bolder;
-        line-height: 30px;
-    }
-    .hero-description{
-        font-family: Ubuntu Mono;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: bold;
-    }
-    .tech-icons-container{
-        width: 80%;
-        h4{
-            color: #444444;
-            font-weight: bolder;
-        }
-        .tech-icons{
-            display: flex;
-            margin-top: 20px;
-            width: 100%;
-            justify-content: space-evenly;
-            .icon{
-                font-family: FontAwesome;
-                font-size: 45px;
-                color: #444444;
-                font-weight: 100;
-                
-            }
-            .icon:hover{
-                cursor: pointer;
-                opacity: 0.5;
-            }
-        }
-        hr{
-            margin-top: 50px;;
-            border: 0.5px solid #000000;
-        }
-        .skill{
-            color: #444444;
-            display: flex;
-            height: 5vh;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            font-family: Ubuntu Mono;
-        }
-    }
+.hero-container {
+	width: 80vw;
+	height: 75vh;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+	display: flex;
+	text-align: center;
+	color: #c4c4c4;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	.hero-img {
+		margin: auto;
+		display: flex;
+		width: 95%;
+		height: 95%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+			url('./assets/herobg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+	.hero-info {
+		width: 40%;
+		margin: auto;
+		align-self: center;
+	}
+	.hero-name {
+		font-size: 25px;
+		font-family: Ubuntu Mono;
+		font-weight: bolder;
+		line-height: 30px;
+	}
+	.hero-description {
+		font-family: Ubuntu Mono;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: bold;
+	}
+	.tech-icons-container {
+		width: 80%;
+		h4 {
+			color: #444444;
+			font-weight: bolder;
+		}
+		.tech-icons {
+			display: flex;
+			margin-top: 20px;
+			width: 100%;
+			justify-content: space-evenly;
+			.icon {
+				font-family: FontAwesome;
+				font-size: 45px;
+				color: #444444;
+				font-weight: 100;
+			}
+			.icon:hover {
+				cursor: pointer;
+				opacity: 0.5;
+			}
+		}
+		hr {
+			margin-top: 50px;
+			border: 0.5px solid #000000;
+		}
+		.skill {
+			color: #444444;
+			display: flex;
+			height: 5vh;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			font-weight: bold;
+			font-family: Ubuntu Mono;
+		}
+	}
+}
+
+.project-container {
+	font-family: 'Ubuntu Mono';
+	width: 80vw;
+	height: 80vh;
+	margin: 0 auto;
+	display: flex;
+	.project-card {
+		border: 2px solid #333333;
+		border-radius: 3px;
+		margin: 20px;
+		display: flex column;
+		width: 200px;
+		height: fit-content;
+		padding: 5px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		p {
+			font-weight: 100;
+		}
+		img {
+			border-radius: 3px;
+			border: 1px solid #333333;
+		}
+		.project-links {
+			padding: 10px;
+			a {
+				background-color: #444444;
+				text-decoration: none;
+				color: white;
+				border: 2px solid white;
+				border-radius: 8px;
+				padding: 5px;
+			}
+			a:hover {
+				background-color: transparent;
+			}
+		}
+	}
+}
+.about-container {
+	display: flex;
+	margin: 20px;
+	.about-description {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
-#burger{
-        display: block;
-    }
-nav{
-    display: flex;
-    flex-direction: column;
-    .nav-links{
-        width: 100%;
-        font-size: 20px;
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        .nav-item{
-            border-top: 0.5px solid #c4c4c4;
-            margin: 10px;
-            display: flex;
-            justify-content: space-between;
-            padding: 5px;
-            align-items: center;
-        }
-    }
-    .nav-logo{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .logo{
-            width: 60px !important;
-            height: 60px !important;
-        }
-    }
-}
-.hero-container{
-    .hero-info{
-        width: 70%;
-    }
-
-}
-
+	#burger {
+		display: block;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		.nav-links {
+			width: 100%;
+			font-size: 20px;
+			display: none;
+			flex-direction: column;
+			justify-content: space-around;
+			.nav-item {
+				border-top: 0.5px solid #c4c4c4;
+				margin: 10px;
+				display: flex;
+				justify-content: space-between;
+				padding: 5px;
+				align-items: center;
+			}
+		}
+		.nav-logo {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.logo {
+				width: 60px !important;
+				height: 60px !important;
+			}
+		}
+	}
+	.hero-container {
+		.hero-info {
+			width: 70%;
+		}
+	}
 }
